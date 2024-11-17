@@ -10,12 +10,16 @@
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <div class="container pt-3">
+    <div class="container pt-4">
         <h1>Welcome to pharmacyApp <br> </h1>
     </div>
 
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <a class="navbar-brand" href="#">Logo</a>
+  <div class="container-fluid pt-4">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <div class="container-fluid pt-4">
+      <div class="collapse navbar-collapse">
+
+      <a class="navbar-brand" href="#">Logo</a>
 
     <!-- Links -->
     <ul class="navbar-nav">
@@ -38,38 +42,63 @@
         </div>
       </li>
     </ul>
+</div>
+      <form class="d-flex input-group w-auto">
+        <input
+                type="search"
+                class="form-control rounded"
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="search-addon"
+        />
+        <span >
+          <button class="btn btn-success" type="submit">Search</button>
+      </span>
 
-    <form class="form-inline nav justify-content-end" action="/action_page.php">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-success" type="submit">Search</button>
-    </form>
+      </form>
+    </div>
   </nav>
+    </div>
 
-  <div class="container pt-6">
 
 
-  <form action="/action_page.php" class="was-validated">
-    <div class="form-group">
-      <label for="uname">Username:</label>
-      <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+  <div class="row">
+    <div class="col"><br></div>
+  </div>
 
+
+
+
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+      <form action="/action_page.php" class="was-validated">
+        <div class="form-group">
+          <label for="uname">Username:</label>
+          <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+
+
+        </div>
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+
+
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
 
     </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+    <div class="col-sm-4"></div>
 
 
-    </div>
-    <div class="form-group form-check">
-      <label class="form-check-label">
-        <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
-
-
-      </label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
   </div>
 
   <script>
