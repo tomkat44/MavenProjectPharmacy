@@ -72,6 +72,11 @@
   </form>
   </div>
 
+  <div>
+    <button type="getDrug" class="btn btn-primary" action="/forms/getDrug.jsp">getDrug</button>
+  </div>
+
+
   <script>
   const app = Vue.createApp({
    data() {
