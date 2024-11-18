@@ -102,7 +102,17 @@
   </div>
 
   <div>
-    <button type="getDrug" class="btn btn-primary" action="/forms/getDrug.jsp">getDrug</button>
+    <form id="main" method="post" name="main" action="forms/drugGet.jsp" onsubmit="redirect(this);">
+      <input type="submit" name="submit"/>
+    </form>
+
+<!--<script>-->
+<!--  function redirect(elem){-->
+<!--    elem.setAttribute("action","forms/drugGet.jsp");-->
+<!--    elem.submit();-->
+<!--    }-->
+<!--</script>-->
+
   </div>
 
 
