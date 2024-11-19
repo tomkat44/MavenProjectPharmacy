@@ -29,7 +29,7 @@
         <%
         DrugRepresentation drug = new DrugRepresentation();
         DrugResource drugR = new DrugResource();
-        DrugTest drugT = new DrugTe();est
+        DrugTest drugT = new DrugTe();
 
         drug = drugT.find(); // how do you get username on button click and assign it to this variable?
 
