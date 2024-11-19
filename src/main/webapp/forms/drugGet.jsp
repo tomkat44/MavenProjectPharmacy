@@ -21,7 +21,6 @@
 
         <%@ page import = "com.example.app.representation.DrugRepresentation" %>
         <%@ page import = "com.example.app.resource.DrugResource" %>
-        <%@ page import = "com.example.app.resource.DrugTest" %>
         <%@ page import =  "javax.ws.rs.core.Response" %>
         <%@ page import = "java.util.List" %>
 
@@ -29,9 +28,9 @@
         <%
         DrugRepresentation drug = new DrugRepresentation();
         DrugResource drugR = new DrugResource();
-        DrugTest drugT = new DrugTe();
 
-        drug = drugT.find(); // how do you get username on button click and assign it to this variable?
+
+        drug = drugR.find(6001); // how do you get username on button click and assign it to this variable?
 
         if (drug.id==6001)
         {
